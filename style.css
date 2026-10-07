@@ -1,0 +1,872 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #191919;
+    font-family: "DM Sans", sans-serif;
+}
+
+/* ==================== HEADER ==================== */
+
+.header {
+    width: 1300px;
+    height: 119px;
+
+    padding: 0 50px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #fff;
+    text-decoration: none;
+
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.nav {
+    display: flex;
+    gap: 40px;
+}
+
+.nav a {
+    color: #fff;
+    text-decoration: none;
+
+    font-size: 14px;
+}
+
+.nav a:hover {
+    color: #118DA8;
+}
+
+/* ==================== HERO ==================== */
+
+.hero {
+    width: 1300px;
+    height: 873.44px;
+
+    margin-left: 50px;
+    margin-top: 40px;
+
+    display: flex;
+    gap: 60px;
+    align-items: center;
+}
+
+.hero__image {
+    width: 650px;
+    height: 873.44px;
+}
+
+.hero__image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+.hero__content {
+    width: 530px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.hero__content h1 {
+    margin: 0;
+
+    color: #fff;
+
+    font-family: "DM Sans", sans-serif;
+    font-size: 70px;
+    font-weight: 400;
+    line-height: 88px;
+    letter-spacing: 3.2px;
+}
+
+.next {
+    position: relative;
+}
+
+.next::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    bottom: -6px;
+
+    width: 160px;
+    height: 8px;
+
+    border-bottom: 4px solid #118DA8;
+    border-radius: 50%;
+
+    transform: rotate(-2deg);
+}
+
+.level {
+    font-size: 80px;
+    font-weight: 700;
+}
+
+.hero__content p {
+    margin: 100px 0 0;
+
+    color: #fff;
+
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.hero__socials {
+    display: flex;
+    gap: 10.25px;
+
+    margin-top: 40px;
+}
+
+.hero__socials img {
+    width: 32px;
+    height: 32px;
+}
+
+/* ==================== EPISODES ==================== */
+
+.episodes {
+    width: 1300px;
+
+    margin-left: 50px;
+    margin-top: 93px;
+}
+
+.episodes__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 40px;
+}
+
+.episodes h2 {
+    margin: 0;
+
+    color: #fff;
+
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 79.2px;
+    letter-spacing: 2.88px;
+}
+
+.episodes__header > a {
+    width: 178px;
+    height: 51px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #118DA8;
+    color: #fff;
+
+    text-decoration: none;
+    border-radius: 6px;
+
+    font-size: 17px;
+    line-height: 27px;
+}
+
+.episodes__header > a:hover {
+    background: #0d7187;
+}
+
+/* ==================== EPISODE CARD ==================== */
+
+.episode-card {
+    width: 1300px;
+    height: 545px;
+
+    padding: 40px;
+
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 60px;
+
+    background: #000;
+    border-radius: 32px;
+}
+
+.episode-card > img {
+    width: 389px;
+    height: 465px;
+
+    object-fit: cover;
+}
+
+.episode-card__content {
+    width: 600px;
+
+    margin-left: 40px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    color: #fff;
+}
+
+.episode-card__category {
+    width: fit-content;
+
+    padding: 2px 6px;
+
+    background: #191919;
+    border-radius: 4px;
+
+    color: #fff;
+
+    font-size: 12px;
+}
+
+.episode-card__number {
+    margin-top: 20px;
+
+    color: #118DA8;
+
+    font-size: 12px;
+}
+
+.episode-card__content h3 {
+    margin: 14px 0 20px;
+
+    color: #fff;
+
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 60px;
+}
+
+.episode-card__description {
+    margin: 0 0 20px;
+
+    color: #fff;
+
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.episode-card__content > a {
+    width: 150px;
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #118DA8;
+    color: #fff;
+
+    text-decoration: none;
+    border-radius: 6px;
+
+    font-size: 14px;
+}
+
+.episode-card__content > a:hover {
+    background: #0d7187;
+}
+
+/* ==================== HOST ==================== */
+
+.host {
+    width: 1300px;
+
+    margin-left: 50px;
+    margin-top: 100px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.host__content {
+    width: 550px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.host__arrow {
+    width: 60px;
+    height: 60px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #118DA8;
+    color: #fff;
+
+    border-radius: 50%;
+    text-decoration: none;
+
+    font-size: 30px;
+}
+
+.host__subtitle {
+    margin-top: 20px;
+
+    color: #fff;
+
+    font-size: 18px;
+}
+
+.host__content h2 {
+    margin: 10px 0 20px;
+
+    color: #fff;
+
+    font-size: 60px;
+    font-weight: 400;
+}
+
+.host__content p {
+    margin: 0;
+
+    color: #fff;
+
+    font-size: 18px;
+    line-height: 27px;
+}
+
+.host__image {
+    width: 650px;
+    height: 650px;
+
+    object-fit: cover;
+
+    border-radius: 32px;
+}
+
+/* ==================== NEWSLETTER ==================== */
+
+.newsletter {
+    width: 1300px;
+    height: 387px;
+
+    margin-left: 50px;
+    margin-top: 100px;
+
+    padding: 100px 50px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    background: #000;
+    border-radius: 32px;
+}
+
+.newsletter__content {
+    display: flex;
+    flex-direction: column;
+}
+
+.newsletter__content span {
+    color: #118DA8;
+
+    font-size: 10px;
+}
+
+.newsletter__content h2 {
+    margin: 5px 0 0;
+
+    color: #fff;
+
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 60px;
+}
+
+.newsletter__form {
+    width: 522px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.newsletter__form input {
+    width: 100%;
+    height: 60px;
+
+    padding: 0 16px;
+
+    border: none;
+    border-radius: 6px;
+
+    background: #191919;
+    color: #fff;
+
+    font-family: "DM Sans", sans-serif;
+    font-size: 14px;
+}
+
+.newsletter__form button {
+    width: 50px;
+    height: 30px;
+
+    border: none;
+    border-radius: 4px;
+
+    background: #118DA8;
+    color: #fff;
+
+    font-size: 8px;
+}
+
+.newsletter__form button:hover {
+    background: #0d7187;
+}
+
+/* ==================== REVIEWS ==================== */
+
+.reviews {
+    width: 1300px;
+
+    margin-left: 50px;
+    margin-top: 100px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+.review {
+    height: 321px;
+
+    padding: 20px;
+
+    background: #000;
+    border-radius: 32px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.review__stars {
+    color: #FCFF00;
+
+    font-size: 14px;
+}
+
+.review p {
+    margin: 12px 0 0;
+
+    color: #fff;
+
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.review span {
+    margin-top: 20px;
+
+    color: #999;
+
+    font-size: 14px;
+}
+
+/* ==================== FOOTER ==================== */
+
+.footer {
+    width: 1400px;
+    height: 438px;
+
+    margin-left: 20px;
+    margin-top: 100px;
+
+    padding: 60px 30px;
+
+    display: flex;
+    align-items: flex-start;
+}
+
+.footer__logo {
+    width: 180px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__logo > a {
+    color: #fff;
+    text-decoration: none;
+
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.footer__socials {
+    display: flex;
+    gap: 10px;
+
+    margin-top: 10px;
+}
+
+.footer__socials a {
+    color: #fff;
+    text-decoration: none;
+
+    font-size: 14px;
+}
+
+.footer__nav {
+    width: 220px;
+
+    display: flex;
+    gap: 40px;
+}
+
+.footer__column {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.footer__column a {
+    color: #fff;
+    text-decoration: none;
+
+    font-size: 10px;
+}
+
+.footer__column a:hover {
+    color: #118DA8;
+}
+
+.footer__platforms {
+    display: flex;
+    gap: 10px;
+}
+
+.footer__platforms img {
+    width: 16px;
+    height: 16px;
+}
+
+/* ==================== TABLET ==================== */
+
+@media (max-width: 900px) {
+
+    /* HEADER */
+
+    .header {
+        width: calc(100% - 40px);
+        height: auto;
+        min-height: 100px;
+
+        margin-left: auto;
+        margin-right: auto;
+
+        padding: 30px 0;
+
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .nav {
+        gap: 25px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    /* HERO */
+
+    .hero {
+        width: calc(100% - 40px);
+        height: auto;
+
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 40px;
+
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .hero__image {
+        width: 100%;
+        height: auto;
+    }
+
+    .hero__image img {
+        width: 100%;
+        height: auto;
+    }
+
+    .hero__content {
+        width: 100%;
+    }
+
+    .hero__content h1 {
+        font-size: 52px;
+        line-height: 60px;
+        letter-spacing: 2px;
+    }
+
+    .level {
+        font-size: 60px;
+    }
+
+    .hero__content p {
+        margin-top: 50px;
+    }
+
+    /* EPISODES */
+
+    .episodes {
+        width: calc(100% - 40px);
+
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 80px;
+    }
+
+    .episodes__header {
+        gap: 20px;
+    }
+
+    .episodes h2 {
+        font-size: 48px;
+        line-height: 55px;
+    }
+
+    .episode-card {
+        width: 100%;
+        height: auto;
+
+        padding: 30px;
+
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .episode-card > img {
+        width: 100%;
+        height: auto;
+
+        max-height: 500px;
+    }
+
+    .episode-card__content {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 30px;
+    }
+
+    .episode-card__content h3 {
+        font-size: 40px;
+        line-height: 48px;
+    }
+
+    /* HOST */
+
+    .host {
+        width: calc(100% - 40px);
+
+        margin-left: auto;
+        margin-right: auto;
+
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .host__content {
+        width: 100%;
+    }
+
+    .host__content h2 {
+        font-size: 50px;
+    }
+
+    .host__image {
+        width: 100%;
+        height: auto;
+    }
+
+    /* NEWSLETTER */
+
+    .newsletter {
+        width: calc(100% - 40px);
+        height: auto;
+
+        margin-left: auto;
+        margin-right: auto;
+
+        padding: 50px 30px;
+
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .newsletter__content h2 {
+        font-size: 48px;
+        line-height: 52px;
+    }
+
+    .newsletter__form {
+        width: 100%;
+    }
+
+    /* REVIEWS */
+
+    .reviews {
+        width: calc(100% - 40px);
+
+        margin-left: auto;
+        margin-right: auto;
+
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .review {
+        height: auto;
+        min-height: 260px;
+    }
+
+    /* FOOTER */
+
+    .footer {
+        width: calc(100% - 40px);
+        height: auto;
+
+        margin-left: auto;
+        margin-right: auto;
+
+        padding: 50px 0;
+
+        flex-wrap: wrap;
+        gap: 50px;
+    }
+}
+
+
+/* ==================== MOBILE ==================== */
+
+@media (max-width: 600px) {
+
+    /* HEADER */
+
+    .header {
+        align-items: flex-start;
+    }
+
+    .nav {
+        width: 100%;
+
+        justify-content: flex-start;
+
+        gap: 15px 20px;
+    }
+
+    /* HERO */
+
+    .hero {
+        margin-top: 30px;
+    }
+
+    .hero__content h1 {
+        font-size: 40px;
+        line-height: 48px;
+        letter-spacing: 1px;
+    }
+
+    .level {
+        font-size: 48px;
+    }
+
+    .hero__content p {
+        margin-top: 40px;
+    }
+
+    .hero__socials {
+        margin-top: 25px;
+    }
+
+    /* EPISODES */
+
+    .episodes__header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .episodes h2 {
+        font-size: 40px;
+        line-height: 48px;
+    }
+
+    .episode-card {
+        padding: 20px;
+        border-radius: 24px;
+    }
+
+    .episode-card__content h3 {
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    /* HOST */
+
+    .host__content h2 {
+        font-size: 40px;
+        line-height: 48px;
+    }
+
+    /* NEWSLETTER */
+
+    .newsletter {
+        padding: 40px 20px;
+        border-radius: 24px;
+    }
+
+    .newsletter__content h2 {
+        font-size: 40px;
+        line-height: 44px;
+    }
+
+    /* REVIEWS */
+
+    .reviews {
+        grid-template-columns: 1fr;
+    }
+
+    /* FOOTER */
+
+    .footer {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .footer__logo {
+        width: auto;
+    }
+
+    .footer__nav {
+        width: 100%;
+        gap: 50px;
+    }
+
+    .footer__platforms {
+        flex-wrap: wrap;
+    }
